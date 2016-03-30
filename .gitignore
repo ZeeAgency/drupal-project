@@ -7,8 +7,16 @@ public/modules/contrib
 public/themes/contrib
 public/profiles/contrib
 
-# Ignore Drupal's file directory
-public/sites/default/files
+# Ignore configuration files that may contain sensitive information.
+public/sites/*/settings.*.php
+public/sites/*/services.*.yml
+
+# Ignore paths that contain user-generated content.
+public/sites/*/files
+public/sites/*/private
+
+# Ignore SimpleTest multi-site environment.
+public/sites/simpletest
 
 
 
